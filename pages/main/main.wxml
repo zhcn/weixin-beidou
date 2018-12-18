@@ -11,7 +11,7 @@
   polyline="{{polyline}}"
   bindregionchange="regionchange"
   show-location
-  style="width: 100%; height: 700rpx;"
+  style="width: 100%; height: 60%;"
   markers="{{markers}}"
 ></map>
 <cover-image src="pin.png" class="pin"></cover-image>
@@ -19,5 +19,5 @@
 <label class="loc-name">{{name}}</label>
 <label class="loc-info">{{info}}</label>
 </view>
-<button bindtap="onGetCurLoc">获取当前位置</button>
-<button bindtap="onMarkCurLoc">记录标记位置</button>
+<button bindtap="onGetCurLoc" class="button">获取当前位置</button>
+<button bindtap="onMarkCurLoc" class="button">记录标记位置</button>

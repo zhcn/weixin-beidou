@@ -3,25 +3,7 @@ const order = ['red','yellow', 'blue','green','red']
 Page({
   data: {
     loc:{},
-    markers: [{
-      iconPath: '/resources/others.png',
-      id: 0,
-      latitude: 23.099994,
-      longitude: 113.324520,
-      /*width: 50,
-      height: 50*/
-    }],
-    controls: [{
-      id: 1,
-      iconPath: '/resources/location.png',
-      position: {
-        left: 0,
-        top: 300 - 50,
-        width: 50,
-        height: 50
-      },
-      clickable: true
-    }],
+    markers: [],
     toView:'green',
     scrollTop: 0
   },
@@ -44,14 +26,12 @@ Page({
     console.log(e)
   },
   tap(e) {
-    for(let i=0;i<order.length;i++) {
-      if (order[i] === this.data.toView) {
-        this.setData({
-          toView:order[i+1]
-        })
-        break
-      }
-    }
+    wx.openLocation({//​使用微信内置地图查看位置。
+      latitude: this.data.loc.latitude,//要去的纬度-地址
+      longitude: this.data.loc.longitude,//要去的经度-地址
+      //name: "宝安中心A地铁口",
+      //address: '宝安中心A地铁口'
+    })
   },
   tapMove(e) {
     this.setData({

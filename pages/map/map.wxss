@@ -1,5 +1,8 @@
 /* pages/map/map.wxss */
-.resicon{
+page{
+height: 100%;
+}
+/*.resicon{
   background-image: url('https://webmap0.bdimg.com/wolfman/static/common/images/markers_new2_4ab0bc5.png');
   width:18px;
   height:27px;
@@ -26,4 +29,4 @@
   display: inline-block;
   border:2px,solid,forestgreen;
   position:absolute;
-}
+}*/

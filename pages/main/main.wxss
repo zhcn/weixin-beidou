@@ -1,4 +1,7 @@
 /* pages/main/main.wxss */
+page{
+height: 100%;
+}
 .pin{
   top:250rpx;
   left:325rpx;
@@ -7,19 +10,19 @@
   position:absolute;
 }
 .loc-res {
-  height: 150rpx;
+  height: 20%; /*150rpx;*/
   width:100%;
   /*top:0rpx;*/
   position: relative;
   display: block;
-  margin-bottom: 20rpx;
+  margin-bottom: 2rpx;
   margin-left:15rpx;
-  border-bottom: 2rpx solid;
+  /*border-bottom: 2rpx solid;
   border-bottom-width: 90%;
-  border-bottom-color: rgb(221, 221, 217);
+  border-bottom-color: rgb(221, 221, 217);*/
 }
 .loc-name{
-  height: 40%;
+  height: 50%;
   width:100%;
   display: inline-block;
   top:5rpx;
@@ -28,12 +31,15 @@
   font-size: 35rpx;
 }
 .loc-info{
-  height:50rpx;
+  height:50%; /*50rpx;*/
   width:100%;
   display: inline-block;
   font-size:25rpx;
-  margin: 1rpx;
+  /*margin: 1rpx;*/
   top:80rpx;
   position: absolute;
   color:rgba(0, 0, 0, 0.459);
+}
+.button{
+  height:10%;
 }
