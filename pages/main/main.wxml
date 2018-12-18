@@ -1,0 +1,23 @@
+<!--pages/main/main.wxml-->
+<map
+  id="map"
+  longitude="{{curLoc.longitude}}"
+  latitude="{{curLoc.latitude}}"
+  scale="14"
+  controls="{{controls}}"
+  bindcontroltap="controltap"
+  markers="{{markers}}"
+  bindmarkertap="markertap"
+  polyline="{{polyline}}"
+  bindregionchange="regionchange"
+  show-location
+  style="width: 100%; height: 700rpx;"
+  markers="{{markers}}"
+></map>
+<cover-image src="pin.png" class="pin"></cover-image>
+<view class="loc-res">
+<label class="loc-name">{{name}}</label>
+<label class="loc-info">{{info}}</label>
+</view>
+<button bindtap="onGetCurLoc">获取当前位置</button>
+<button bindtap="onMarkCurLoc">记录标记位置</button>

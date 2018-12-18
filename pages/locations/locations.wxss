@@ -1,0 +1,37 @@
+/* pages/locations/locations.wxss */
+.loc-res {
+  height: 150rpx;
+  width:100%;
+  /*top:0rpx;*/
+  position: relative;
+  display: block;
+  margin-bottom: 20rpx;
+  margin-left:15rpx;
+  border-bottom-width: 90%;
+  border-bottom-color: rgb(221, 221, 217);
+}
+.loc-icon{
+ height: 27px;
+ width:18px;
+ display: inline-block;
+ margin-right: 10rpx;
+}
+.loc-name{
+  height: 40%;
+  width:90%;
+  display: inline-block;
+  top:5rpx;
+  position:absolute;
+  color: #3385ff;
+  font-size: 35rpx;
+}
+.loc-info{
+  height:50rpx;
+  width:90%;
+  display: inline-block;
+  font-size:25rpx;
+  margin: 1rpx;
+  top:80rpx;
+  position: absolute;
+  color:rgba(0, 0, 0, 0.459);
+}

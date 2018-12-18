@@ -1,0 +1,11 @@
+<!--pages/locations/locations.wxml-->
+<scroll-view 
+scroll-y
+style="height:750rpx;"
+>
+<view wx:for="{{recent}}" wx:key="*this" wx:for-item="item" class="loc-res" id="{{item}}" bindtap="bindRecentTap" wx:for-index="index" data-index="{{index}}">
+<image class="loc-icon" src="loc.png"></image>
+<label class="loc-name">{{item.name}}</label>
+<label class="loc-info">{{item.info}}</label>
+</view>
+</scroll-view>
